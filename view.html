@@ -1,0 +1,57 @@
+
+<section class="content-header">
+</section>
+
+<aside class="control-sidebar control-sidebar-dark">
+
+
+</aside>
+
+<div class="control-sidebar-bg" style="position: fixed; height: auto;"></div>
+
+
+<section class="content">
+    <div class="modal-example"><script type="text/javascript">
+
+
+    </script>
+
+
+        <div>
+
+
+            <table class="table table-bordered table-striped" show-filter="true" >
+
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>DOB</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th></th>
+                </tr>
+
+
+                <tr ng-repeat="student in students ">
+                    <td data-title="'HIN'" >
+                        npm{{student.HIN}}</td>
+                    <td data-title="'First Name'" >
+                        {{student.firstName}}</td>
+                    <td data-title="'Last Name'" >
+                        {{student.lastName}}</td>
+                    <td data-title="'DOB'" >
+                        {{student.birthday}}</td>
+
+                    <td data-title="'Address'" >
+                        {{student.address}}</td>
+                    <td data-title="'Telephone'" >
+                        {{student.phone}}</td>
+                    <td >
+                        <!--<button class="btn-btn-Dafault" ng-click="addEditStudent(student._id)">Edit</button></td>-->
+                        <a ng-href="Register/{{student._id}}">Open</a>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
